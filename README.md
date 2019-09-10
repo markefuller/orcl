@@ -43,7 +43,7 @@ cd demo
 node --version 
 ```
 
-5. Verify the version of npm that is installed.
+5. Determine the version of npm that is installed.
 ```
 npm -v 
 ```
@@ -63,10 +63,20 @@ For this hands on lab, the Oracle Instant Client for Microsoft Windows (x64) has
 
 1. Unzip the Oracle Instant into your **/c/demo** directory.
 ```
-unzip /c/OracleDB-Node.js-lab/instantclient-basic-windows.x64-19.3.0.0.0dbru.zip .
-The Oracle Instant Client can be found at 
-## Sign in to OCI Console
+unzip /c/OracleDB-Node.js-lab/instantclient-basic-windows.x64-19.3.0.0.0dbru.zip
+```
 
+2. Change to the instantclient_19_3 subdirectory that was just created, and create network/admin subdirectories.
+```
+cd instantclient_19_3
+mkdir -p 
+```
+
+## Sign in to the Oracle Cloud Infrastructure console
+
+1. Launch the Chrome browser application (Same location that you launched Git-Bash). The home page should be set to the OCI sign in page.
+
+2. Sign in to the OCI console using the following information.
 * **Tenant Name:** {{Cloud Tenant}}
 * **User Name:** {{User Name}}
 * **Password:** {{Password}}
