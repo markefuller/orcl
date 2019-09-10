@@ -6,8 +6,11 @@ Oracle Autonomous Transaction Processing delivers a self-driving, self-securing,
 
 ## Installing Node.js
 
-For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has already been installed. Node.js is available for several different operating systems and can be downloaded from https://nodejs.org/en/downloads. There are techniques for installing Node.js with administrative privileges such as root or administrator access, and techniques for installing without special privileges. 
+For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has already been installed. Node.js is available for several different operating systems and can be downloaded from https://nodejs.org/en/downloads. There are techniques for installing Node.js with administrative privileges such as root or administrator access, and techniques for installing without special privileges. The Microsoft Windows platform has an additional requirement to install the Visual Studio 2017 Redistributable. This step has already been performed.
 
+## Installing Oracle Database driver for Node.js
+1. Verify the version of Node.js installed.
+``` Node --version ```
 
 ## Sign in to OCI Console
 
@@ -16,7 +19,7 @@ For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has al
 * **Password:** {{Password}}
 * **Compartment:** {{Compartment}}
 * **Database Name:** {{Database Name}}
-* ** Database User:** admin
+* **Database User:** admin
 * **Database Password:** {{Database Password}}
 
 
