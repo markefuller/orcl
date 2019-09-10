@@ -118,7 +118,7 @@ vi /c/demo/example.js
 Make the following changes:
 * Change the user to admin so it appears as follows: **user   : 'ADMIN'**
 * Change the password to the password you created when downloading the wallet.
-* Change the connectString to <database name>_low. Your connection string will be the name of your database followed by **_low**. Your database name is **{{Database Name}}**.
+* Change the connectString to \<database name\>_low. Your connection string will be the name of your database followed by **_low**. Your database name is **{{Database Name}}**.
 Example: If your database name was **Demo** then your connection string would be set as follows:  **connectString : 'demo_low'**
 
 ## Test your Node.js Application
