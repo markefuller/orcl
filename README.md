@@ -2,7 +2,7 @@
 
 ## Overview
 
-Oracle Autonomous Transaction Processing delivers a self-driving, self-securing, self-repairing database service that can instantly scale to meet demands of mission critical applications. In this hands on lab, you will install Node.js and use a small example application to connect to an Oracle Autonomous Transaction Processing database using the Oracle Instant client.
+Oracle Autonomous Transaction Processing delivers a self-driving, self-securing, self-repairing database service that can instantly scale to meet demands of mission critical applications. In this hands on lab, you will use Node.js to run an example application that connects to an Oracle Autonomous Transaction Processing database using the Oracle Instant client.
 
 ## Installing Node.js
 
@@ -20,12 +20,13 @@ For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has al
 
 3. Click into the pop up window and press Ctrl-V.
 
-4. Click in the tool or field where you want to paste and press Shift+Ins inside a Git-Bash window. 
+4. Click in the tool or field where you want to paste and press Shift+Ins inside a Git-Bash window, or you can right-click inside the Git-Bash windows and select paste.
 
 **Installing Oracle Database driver for Node.js**
 
 1. Open a Git-Bash window.
-**img**
+
+   <img src="img/gitBash.png">
 
 2. Navigate to the root folder of the C: drive.
 ```
