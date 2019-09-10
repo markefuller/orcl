@@ -94,9 +94,9 @@ source ~/.bashrc
 
 3. Go to the service details page for your instance and select **DB Connection**.
 
-4. Select download and follow the on-screen instructions to create a password for this wallet. You will need this password in a later step.
+4. Select **Download** and follow the on-screen instructions to create a password for this wallet. You will need this password in a later step.
 
-5. Select download. The file is placed in the user's Downloads folder by the browser.
+5. Select **Download**. A zip file containing the wallet is placed in the user's Downloads folder by the browser.
 
 6. Change to the network/admin subdirectory for the Oracle Instant Client, and unzip the wallet. 
 ```
