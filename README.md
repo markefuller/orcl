@@ -20,7 +20,7 @@ For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has al
 
 3. Click into the pop up window and press Ctrl-V.
 
-4. Click in the tool or field where you want to paste and press Ctrl-V again.
+4. Click in the tool or field where you want to paste and press Shift+Ins inside a Git-Bash window. 
 
 **Installing Oracle Database driver for Node.js**
 
@@ -66,10 +66,16 @@ For this hands on lab, the Oracle Instant Client for Microsoft Windows (x64) has
 unzip /c/OracleDB-Node.js-lab/instantclient-basic-windows.x64-19.3.0.0.0dbru.zip
 ```
 
-2. Change to the instantclient_19_3 subdirectory that was just created, and create network/admin subdirectories.
+2. Change to the instantclient_19_3 subdirectory that was just created, and create network/admin subdirectories. The Oracle Wallet security credentials from the OCI database instance will need to be placed into the /c/demo/instanctclient_19_3/network/admin directory.
 ```
 cd instantclient_19_3
 mkdir -p 
+```
+
+3. Add the location of the installed Oracle Instant Client to the PATH variable persistently.
+```
+echo "export PATH=/c/demo/instanctclient_19_3:\$PATH" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ## Sign in to the Oracle Cloud Infrastructure console
@@ -85,9 +91,46 @@ mkdir -p
 * **Database User:** admin
 * **Database Password:** {{Database Password}}
 
+3. Go to the service details page for your instance and select **DB Connection**
 
-Sign in using your tenant name, user name and password. Use the login option under **Oracle Cloud Infrastructure**
+4. Select download and follow the on-screen instructions to create a password for this wallet. You will need this password in a later step.
 
+5. Select download. The file is placed in the user's Downloads folder by the browser.
+
+6. Change to the network/admin subdirectory for the Oracle Instant Client, and unzip the wallet. 
+```
+cd /c/demo/instanctclient_19_3/network/admin
+unzip ~/Downloads/Wallet*.zip
+```
+
+## Install and Configure the Example Node.js Application 
+
+1. Copy the example.js application to the **/c/demo** directory.
+```
+cp /c/OracleDB-Node.js-lab/example.js /c/demo
+```
+
+2. Edit the example.js application and set the username, password, and 
+``` 
+vi /c/demo/example.js
+```
+Make the following changes:
+* Change the user to admin so it appears as follows: **user   : 'ADMIN'**
+* Change the password to the password you created when downloading the wallet.
+* Change the connectString to <database name>_low. Your connection string will be the name of your database followed by **_low**. Your database name is **{{Database Name}}**.
+Example: If your database name was **Demo** then your connection string would be set as follows:  **connectString : 'demo_low'**
+
+## Test your Node.js Application
+
+Use the following commands to run your Node.js application:
+```
+cd /c/demo
+node example.js
+```
+
+You should see the follwing output indicating success: ** [ [ 101, 'Alpha' ], [ 102, 'Beta' ], [ 103, 'Gamma' ] ].
+
+The demo application 
 
 
 ## References
@@ -99,3 +142,5 @@ Sign in using your tenant name, user name and password. Use the login option und
 3. Connecting with Python, node.js and other Scripting Languages : https://docs.oracle.com/en/cloud/paas/atp-cloud/atpug/connecting-nodejs.html#GUID-AB1E323A-65B9-47C4-840B-EC3453F3AD53
 
 4. Oracle Instant Client : http://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html
+
+5. Example.js Node Application : https://github.com/oracle/oracle-db-examples/blob/master/exadata-express/Example.js
