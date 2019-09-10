@@ -49,7 +49,7 @@ node --version
 npm -v 
 ```
 
-6. Use npm to install the Oracle Database driver for Node.js
+6. Use npm to install the Oracle Database driver for Node.js.
 ``` 
 npm install oracledb
 ```
@@ -83,7 +83,7 @@ source ~/.bashrc
 
 1. Launch the Chrome browser application (Same location that you launched Git-Bash). The home page should be set to the OCI sign in page.
 
-2. Sign in to the OCI console using the following information.
+2. Sign in to the OCI console using the following information:
 * **Tenant Name:** {{Cloud Tenant}}
 * **User Name:** {{User Name}}
 * **Password:** {{Password}}
@@ -92,7 +92,7 @@ source ~/.bashrc
 * **Database User:** admin
 * **Database Password:** {{Database Password}}
 
-3. Go to the service details page for your instance and select **DB Connection**
+3. Go to the service details page for your instance and select **DB Connection**.
 
 4. Select download and follow the on-screen instructions to create a password for this wallet. You will need this password in a later step.
 
@@ -111,7 +111,7 @@ unzip ~/Downloads/Wallet*.zip
 cp /c/OracleDB-Node.js-lab/example.js /c/demo
 ```
 
-2. Edit the example.js application and set the username, password, and 
+2. Edit the example.js application and set the username, password, and connection string.
 ``` 
 vi /c/demo/example.js
 ```
@@ -129,10 +129,9 @@ cd /c/demo
 node example.js
 ```
 
-You should see the follwing output indicating success: ** [ [ 101, 'Alpha' ], [ 102, 'Beta' ], [ 103, 'Gamma' ] ].
+You should see the follwing output indicating success: **[ [ 101, 'Alpha' ], [ 102, 'Beta' ], [ 103, 'Gamma' ] ]**.
 
-The demo application 
-
+**Congratulations! You have successfully completed the lab.**
 
 ## References
 
@@ -144,4 +143,4 @@ The demo application
 
 4. Oracle Instant Client : http://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html
 
-5. Example.js Node Application : https://github.com/oracle/oracle-db-examples/blob/master/exadata-express/Example.js
+5. Example.js Node Application used : https://github.com/oracle/oracle-db-examples/blob/master/exadata-express/Example.js
