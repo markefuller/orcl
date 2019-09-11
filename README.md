@@ -3,7 +3,15 @@
 ## Table of Contents
 
 [Overview](#Overview)
+
 [Installing Node.js](#Installing Node.js)
+
+[Installing Oracle Database driver for Node.js](#Installing Oracle Database driver for Node.js)
+
+[Install the Oracle Instant Client](#Install the Oracle Instant Client)
+
+[Sign in to the Oracle Cloud Infrastructure console](#Sign in to the Oracle Cloud Infrastructure console)
+
 
 ## Overview
 
