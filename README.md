@@ -19,11 +19,13 @@
 [References](#references)
 
 <a name="overview"/>
+
 ## Overview
 
 Oracle Autonomous Transaction Processing delivers a self-driving, self-securing, self-repairing database service that can instantly scale to meet demands of mission critical applications. In this hands on lab, you will use Node.js to run an example application that connects to an Oracle Autonomous Transaction Processing database using the Oracle Instant client.
 
 <a name="installnode"/>
+
 ## Installing Node.js
 
 For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has already been installed. Node.js is available for several different operating systems and can be downloaded from https://nodejs.org/en/downloads. There are techniques for installing Node.js with administrative privileges such as root or administrator access, and techniques for installing without special privileges. The Microsoft Windows platform has an additional requirement to install the Visual Studio 2017 Redistributable. This step has already been performed.
