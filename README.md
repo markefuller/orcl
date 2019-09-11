@@ -31,6 +31,7 @@ Oracle Autonomous Transaction Processing delivers a self-driving, self-securing,
 For this hands on lab, Node.js version 12.9.1 for Microsoft Windows (x64) has already been installed. Node.js is available for several different operating systems and can be downloaded from https://nodejs.org/en/downloads. There are techniques for installing Node.js with administrative privileges such as root or administrator access, and techniques for installing without special privileges. The Microsoft Windows platform has an additional requirement to install the Visual Studio 2017 Redistributable. This step has already been performed.
 
 <a name="installdriver"/>
+
 ## Installing Oracle Database driver for Node.js
 
 **Using the Clipboard**
@@ -83,6 +84,7 @@ npm list
 ```
 
 <a name="installclient"/>
+
 ## Install the Oracle Instant Client
 For this hands on lab, the Oracle Instant Client for Microsoft Windows (x64) has already been downloaded and staged, but not installed. The Oracle Instant Client is typically downloaded from https://www.oracle.com/database/technologies/instant-client/downloads.html. It is currently stage in the **/c/OracleDB-Node.js-lab** folder.
 
@@ -104,6 +106,7 @@ source ~/.bashrc
 ```
 
 <a name="signin"/>
+
 ## Sign in to the Oracle Cloud Infrastructure console
 
 1. Launch the Chrome browser application (Same location that you launched Git-Bash). The home page should be set to the OCI sign in page.
@@ -130,6 +133,7 @@ unzip ~/Downloads/Wallet*.zip
 ```
 
 <a name="installapp"/>
+
 ## Install and Configure the Example Node.js Application 
 
 1. Copy the example.js application to the **/c/demo** directory.
@@ -148,6 +152,7 @@ Make the following changes:
 Example: If your database name was **Demo** then your connection string would be set as follows:  **connectString : 'demo_low'**. Your database name is currently **{{Database Name}}**.
 
 <a name="testing"/>
+
 ## Test your Node.js Application
 
 Use the following commands to run your Node.js application:
@@ -161,6 +166,7 @@ You should see the follwing output indicating success: **[ [ 101, 'Alpha' ], [ 1
 **Congratulations! You have successfully completed the lab.**
 
 <a name="references"/>
+
 ## References
 
 1. Youtube video of this hands on lab : https://www.youtube.com/embed/UG8z94vxYQE?rel=0&autoplay=1
