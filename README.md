@@ -1,5 +1,10 @@
 # Connecting Node.js Applications to Autonomous Transaction Processing
 
+## Table of Contents
+
+[Overview](#Overview)
+[Installing Node.js](#Installing Node.js)
+
 ## Overview
 
 Oracle Autonomous Transaction Processing delivers a self-driving, self-securing, self-repairing database service that can instantly scale to meet demands of mission critical applications. In this hands on lab, you will use Node.js to run an example application that connects to an Oracle Autonomous Transaction Processing database using the Oracle Instant client.
